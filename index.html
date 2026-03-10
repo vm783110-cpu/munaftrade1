@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade With Munaf</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','4115437572103020');
+fbq('track','PageView');
+</script>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+height:100vh;
+}
+
+.card{
+width:360px;
+background:#171717;
+padding:35px 25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+
+.profile{
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid #ffb300;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+h1{
+color:#ffc400;
+margin:10px 0;
+}
+
+.badge{
+background:#222;
+padding:10px 15px;
+border-radius:20px;
+display:inline-block;
+margin:8px;
+font-size:14px;
+}
+
+.timer{
+margin-top:20px;
+font-size:18px;
+}
+
+.join{
+display:block;
+margin-top:20px;
+padding:16px;
+border-radius:12px;
+background:#43d4cf;
+color:black;
+font-weight:bold;
+text-decoration:none;
+font-size:18px;
+}
+
+.feature{
+background:#1e1e1e;
+padding:14px;
+border-radius:10px;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="logo.png" class="profile">
+
+<h1>Trade With Munaf</h1>
+
+<div>✅ Trusted by thousands of learners</div>
+
+<div class="badge">24/7 Updates</div>
+<div class="badge">Free to Join</div>
+
+<div class="timer">
+Auto joining in <span id="count">5</span> seconds
+</div>
+
+<a class="join" href="https://t.me/+D3UX5wi35IcyNjZl"
+onclick="fbq('track','Lead',{value:1,currency:'USD'})">
+Join Telegram
+</a>
+
+<div class="feature">✔ Market Insights & Discussions</div>
+<div class="feature">✔ Learn with Experts</div>
+<div class="feature">✔ Practical Strategies</div>
+
+</div>
+
+<script>
+
+let t=5;
+
+setInterval(function(){
+
+if(t>0){
+t--;
+document.getElementById("count").innerText=t;
+}else{
+
+fbq('track','Subscribe',{value:1,currency:'USD'});
+window.location.href="https://t.me/+D3UX5wi35IcyNjZl";
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
