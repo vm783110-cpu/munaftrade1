@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>COLOUR PREDICTION</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trade With Munaf</title>
 
-<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,130 +15,179 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init','4115437572103020');
-fbq('track','PageView');
-</script>
+fbq('init', '2399182597221381'); 
+fbq('track', 'PageView');
 
+// Function to handle click and fix "Missing Currency/Value" error
+function ctaClick() {
+    try {
+        if (typeof fbq === "function") {
+            fbq('track', 'Lead', {
+                value: 1.00,
+                currency: 'INR'
+            });
+        }
+    } catch(e) {}
+    
+    // Naya Telegram Link
+    window.location.href = "https://t.me/+ONjQkqAOf_sxYmY1";
+}
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2399182597221381&ev=PageView&noscript=1"
+/></noscript>
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
 
 body{
-margin:0;
-font-family:Arial;
-background:#0f0f0f;
-color:white;
+background:#000;
+color:#fff;
+min-height:100vh;
+overflow-x:hidden;
 display:flex;
-align-items:center;
 justify-content:center;
-height:100vh;
+}
+
+.main{
+width:100%;
+max-width:420px;
+padding:30px 16px 50px;
+position:relative;
+z-index:2;
+text-align:center;
+}
+
+.rain{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:1;
+background:
+linear-gradient(transparent 0%,rgba(255,255,255,.12) 50%,transparent 100%);
+background-size:2px 120px;
+animation:rain 0.6s linear infinite;
+opacity:.35;
+}
+@keyframes rain{
+from{background-position:0 0;}
+to{background-position:0 120px;}
+}
+
+.logo{
+width:160px;
+height:160px;
+border-radius:18px;
+object-fit:cover;
+box-shadow:0 0 25px rgba(180,120,255,.6);
+margin:auto;
+display:block;
+}
+
+.title{
+margin-top:18px;
+font-size:32px;
+font-weight:900;
+letter-spacing:2px;
+color:#ffd978;
+text-shadow:0 0 18px #ffcc55;
+}
+
+.sub{
+margin-top:8px;
+font-size:15px;
+color:#ffd978;
+letter-spacing:1px;
+}
+
+.join-now{
+margin:12px 0 22px;
+font-size:16px;
+color:#fff;
+}
+
+.join-btn{
+display:inline-block;
+margin-top:10px;
+padding:15px 26px;
+border-radius:30px;
+background:linear-gradient(90deg,#ffe28a,#ffc94d);
+color:#000;
+font-weight:900;
+text-decoration:none;
+box-shadow:0 0 25px #ffd86b;
+animation:pulse 1.2s infinite;
+cursor: pointer;
+border: none;
+width: 80%;
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 10px #ffd86b;}
+50%{box-shadow:0 0 35px #ffd86b;}
+100%{box-shadow:0 0 10px #ffd86b;}
 }
 
 .card{
-width:360px;
-background:#171717;
-padding:35px 25px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 0 40px rgba(0,0,0,0.6);
+margin-top:30px;
+background:rgba(255,255,255,.08);
+border-radius:22px;
+padding:22px 18px;
+backdrop-filter:blur(8px);
+box-shadow:0 0 30px rgba(255,255,255,.08);
 }
 
-.profile{
-width:90px;
-height:90px;
-border-radius:50%;
-border:4px solid #ffb300;
-object-fit:cover;
-margin-bottom:15px;
+.card p{
+font-size:16px;
+margin:14px 0;
+letter-spacing:.5px;
 }
 
-h1{
-color:#ffc400;
-margin:10px 0;
-}
-
-.badge{
-background:#222;
-padding:10px 15px;
-border-radius:20px;
-display:inline-block;
-margin:8px;
-font-size:14px;
-}
-
-.timer{
-margin-top:20px;
-font-size:18px;
-}
-
-.join{
-display:block;
-margin-top:20px;
-padding:16px;
-border-radius:12px;
-background:#43d4cf;
-color:black;
+.card span{
+color:#ffd978;
 font-weight:bold;
-text-decoration:none;
-font-size:18px;
 }
 
-.feature{
-background:#1e1e1e;
-padding:14px;
-border-radius:10px;
-margin-top:10px;
+.footer{
+margin-top:24px;
+font-size:12px;
+color:#aaa;
 }
 
 </style>
-
 </head>
-
 <body>
 
+<div class="rain"></div>
+
+<div class="main">
+
+<img src="logo.png" class="logo">
+
+<div class="title">COLOUR PREDICTION</div>
+
+<div class="sub">INDIA'S BEST COLOR TRADING TIPPER 🔥</div>
+
+<div class="join-now">🔥 JOIN TELEGRAM NOW 🔥</div>
+
+<button class="join-btn" onclick="ctaClick()">
+🚀 JOIN TELEGRAM FREE
+</button>
+
 <div class="card">
-
-<img src="logo.png" class="profile">
-
-<h1>Trade With Munaf</h1>
-
-<div>✅ Trusted by thousands of learners</div>
-
-<div class="badge">24/7 Updates</div>
-<div class="badge">Free to Join</div>
-
-<div class="timer">
-Auto joining in <span id="count">5</span> seconds
+<p>🔥 <span>RECOVERY ALL LOSS IN 1 DAYS</span></p>
+<p>✨ <span>F99% ACCOUNT PREDICTION</span></p>
+<p>✨ <span>DALL NUMBER HACK FREE</span> ✨</p>
+<p>✨ <span>F100% PERSONAL LOSS RECOVERY</span> ✨</p>
 </div>
 
-<a class="join" href="https://t.me/+D3UX5wi35IcyNjZl"
-onclick="fbq('track','Lead',{value:1,currency:'USD'})">
-Join Telegram
-</a>
-
-<div class="feature">✔ Market Insights & Discussions</div>
-<div class="feature">✔ Learn with Experts</div>
-<div class="feature">✔ Practical Strategies</div>
-
+<div class="footer">
+©️ 2025 COLOUR PREDICTION • Telegram Community
 </div>
 
-<script>
-
-let t=5;
-
-setInterval(function(){
-
-if(t>0){
-t--;
-document.getElementById("count").innerText=t;
-}else{
-
-fbq('track','Subscribe',{value:1,currency:'USD'});
-window.location.href="https://t.me/+D3UX5wi35IcyNjZl";
-
-}
-
-},1000);
-
-</script>
+</div>
 
 </body>
 </html>
